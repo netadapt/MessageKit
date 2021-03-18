@@ -236,11 +236,11 @@ UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UIGestureRecogni
         messagesCollectionView.dataSource = self
     }
 
-    public func setupSubviews() {
+    open func setupSubviews() {
         view.addSubview(messagesCollectionView)
     }
 
-    public func setupConstraints() {
+    open func setupConstraints() {
         messagesCollectionView.translatesAutoresizingMaskIntoConstraints = false
         
         let top = messagesCollectionView.topAnchor.constraint(equalTo: view.topAnchor)
